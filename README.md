@@ -36,7 +36,7 @@ Note that arguments can be anything as long as the Attribute expects the format 
 
 
 ```
-import worker
+from Worker import StartWorkers
 
 class WorkerAttributes(object):
 
