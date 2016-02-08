@@ -48,7 +48,11 @@ class WorkerClass(multiprocessing.Process):
 				job = jobQueue.get(True,1)
 			except Queue.Empty:
 				continue
- 
+
+			# exit if Exit signal is on queue
+			if job is False:
+				break 
+
 			# if worker got a job, handle the job
 			self.jobHandler(job)
 
