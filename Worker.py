@@ -31,7 +31,7 @@ class WorkerClass(multiprocessing.Process):
 	def jobHandler(self, job):
 
 		# runs job with query
-		self.WorkerFunctions[job["target"]](job["query"])
+		self.WorkerFunctions[job["target"]](job["arguments"])
 
 
 	# starts worker
@@ -48,7 +48,7 @@ class WorkerClass(multiprocessing.Process):
 				job = jobQueue.get(True,1)
 			except Queue.Empty:
 				continue
-
+ 
 			# if worker got a job, handle the job
 			self.jobHandler(job)
 
