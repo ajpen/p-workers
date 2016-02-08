@@ -46,8 +46,8 @@ class WorkerAttributes(object):
 
 
 
-
-jobQueue = StartWorkers(1, WorkerAttributes)
+AttributeInstance = WorkerAttributes()
+jobQueue = StartWorkers(1, AttributeInstance)
 
 for i in xrange(10):
 
