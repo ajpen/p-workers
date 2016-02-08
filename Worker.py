@@ -59,8 +59,10 @@ def StartWorkers(count, attributeClass):
 
 	# initialize job queue
 	JobQueue = multiprocessing.Queue()
+	attributes = generateAttributes(attributeClass) 
 
-	workers = [ WorkerClass(JobQueue, generateAttributes(attributeClass)) for i in xrange(count) ]
+
+	workers = [ WorkerClass(JobQueue, attributes) for i in xrange(count) ]
 	
 	for worker in workers:
 		worker.setDaemon = True
