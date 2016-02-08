@@ -32,3 +32,25 @@ The arguments refer to the parameters that must be passed to the function. "Argu
 A Job takes the following form:  {"target": "Attribute_Name", "arguments":{"key":"value"}}
 Note that arguments can be anything as long as the Attribute expects the format used. 
 
+##Example
+
+
+```
+import worker
+
+class WorkerAttributes(object):
+
+	def test(self, arguments):
+	
+		print arguments
+
+
+
+
+jobQueue = StartWorkers(1, WorkerAttributes)
+
+for i in xrange(10):
+
+    jobQueue.put({"target":"test", "arguments": "Hello, World!"})
+
+```
