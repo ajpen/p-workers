@@ -54,3 +54,6 @@ for i in xrange(10):
     jobQueue.put({"target":"test", "arguments": "Hello, World!"})
 
 ```
+
+### Worker Cleanup
+Worker Childprocesses are designed to exit whenever the parent process cease to exist. Passing the boolean "False" onto the queue will also kill a single Worker. To kill all of them, False must be passed as many times as the number of workers currently running.
