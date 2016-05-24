@@ -1,5 +1,5 @@
 # python-multiprocess-worker-library
-A generic library for childprocess workers
+A generic library for starting childprocesses known as "workers" with specific attributes and a shared queue.
 
 
 ## Installation
