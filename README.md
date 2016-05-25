@@ -1,5 +1,5 @@
-# python-multiprocess-worker-library
-A generic library for starting childprocesses known as "workers" with specific attributes and a shared queue. This library makes it easier to use python multiprocessing to bypass the GIL for "concurrent" applications. 
+# P-Workers
+Starts childprocesses known as "workers" with specific attributes and a shared queue. This library makes it easier to use python multiprocessing to bypass the GIL for "concurrent" applications. 
 
 
 ## Installation
