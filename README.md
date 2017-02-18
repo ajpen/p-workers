@@ -10,7 +10,7 @@ All that is required is the Worker.py file.
 Add the Worker.py file to your source directory and import the module. 
 One method initializes the worker(s) and the Job Queue, assigns the passed attributes to the worker and returns the Job Queue for usage. 
 
-JobQueue = StartWorkers(Number_of_workers, AttributeClass)
+`JobQueue = StartWorkers(Number_of_workers, AttributeClass)`
 
 After calling the function above, one can begin using the workers by putting jobs on the JobQueue. 
 
