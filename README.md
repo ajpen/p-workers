@@ -1,4 +1,7 @@
 # P-Workers
+
+**Note:** This is an old project I did a few years back. There are much better options out there, like [Celery](https://github.com/celery/celery)
+
 Starts childprocesses known as "workers" with specific attributes and a shared queue. This library makes it easier to use python multiprocessing to bypass the GIL for "concurrent" applications. 
 
 
